@@ -8,12 +8,12 @@ where first_name  like 'Irena'
 OR first_name like 'Vidya'
 OR first_name like 'Maya'
 AND gender = 'M'
-order by first_name;
+order by last_name, first_name;
 
-select first_name
+select first_name, last_name
 from employees
-where first_name like 'e%'
-order by first_name;
+where first_name like '%e%'
+order by  emp_no desc;
 
 select hire_date
 from employees
